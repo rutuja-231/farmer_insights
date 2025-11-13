@@ -1,0 +1,100 @@
+/* Import Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Lora:wght@400;500;700&family=Playfair+Display:wght@400;600;700&display=swap');
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #c9ad8d;
+
+  color: white; /* You’ll need to switch the text color */
+  padding: 0.8rem 2rem;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+  font-family: 'Lora', serif; /* body font by default */
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.navbar-left {
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  height: 55px;
+  width: 55px;
+  object-fit: cover;
+  margin-right: 1rem;
+  border-radius: 10px;
+  box-shadow: 0 3px 8px rgba(0,0,0,0.2);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.logo:hover {
+  transform: scale(1.1) rotate(-3deg);
+  box-shadow: 0 6px 15px rgba(0,0,0,0.3);
+}
+
+.brand-name {
+  font-family: 'Playfair Display', serif; /* headings font */
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: #3b2f2f; /* dark brown */
+}
+
+.navbar-right {
+  list-style: none;
+  display: flex;
+  gap: 2rem;
+}
+
+.navbar-right li a {
+  text-decoration: none;
+  color: #3b2f2f; /* dark brown */
+  font-weight: 600;
+  font-family: 'Playfair Display', serif; /* heading-style links */
+  padding-bottom: 3px;
+  position: relative;
+  transition: color 0.3s ease, transform 0.2s ease;
+}
+
+.navbar-right li a::after {
+  content: "";
+  display: block;
+  height: 3px;
+  background: #a86138; /* warm golden underline */
+  width: 0;
+  transition: width 0.3s ease;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  border-radius: 2px;
+}
+
+.navbar-right li a:hover {
+  color: #a86138; /* golden highlight on hover */
+  transform: scale(1.05);
+}
+
+.navbar-right li a:hover::after {
+  width: 100%;
+}
+
+/* Optional: small screen responsiveness */
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .navbar-right {
+    gap: 1rem;
+    margin-top: 0.5rem;
+    flex-wrap: wrap;
+  }
+}
+
+/* Body text default */
+body, p, input, select, textarea {
+  font-family: 'Lora', serif;
+}

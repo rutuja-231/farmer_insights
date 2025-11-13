@@ -1,0 +1,97 @@
+.home-bg {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  min-height: calc(100vh - 80px);
+  width: 100%;
+  display: flex;
+  align-items: center;        
+  justify-content: flex-end;  
+  padding-right: 14%;         
+  box-sizing: border-box;
+}
+
+.home-content {
+  text-align: right;          
+  color: rgb(153, 86, 48);               
+  background-color: transparent; 
+  padding: 0;                 
+  border-radius: 0;           
+  max-width: 600px;
+  font-family: 'Playfair Display', serif;
+  font-size: 1.5rem;           /* increase overall font size */
+  animation: fadeInUp 1.5s ease forwards; /* add animation */
+  opacity: 0;                  /* start hidden for animation */
+}
+
+.home-content h1 {
+  margin: 0;
+  line-height: 1.2;            
+}
+
+
+.home-content span {
+  display: block;
+  margin-left: 20px;           
+  font-size: 1.2em;            
+}
+
+.home-content h1,
+.home-content span,
+.home-content p {
+  text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.6); /* subtle dark shadow */
+}
+
+
+/* Animation: fade in and move up */
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Upload Section */
+.upload-section {
+  text-align: right;              
+  margin-top: 2rem;               
+  margin-right: 20%;               
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 0.5rem;
+}
+
+.upload-section h2 {
+  color: rgb(153, 86, 48);
+  font-family: 'Playfair Display', serif;
+  font-size: 2rem;
+  margin: 3;
+  margin-right: 4rem;
+  text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.6);
+}
+
+/* Style only the "Choose File" button */
+.upload-btn::file-selector-button {
+  padding: 0.7rem 1.5rem;
+  border: none;
+  border-radius: 12px;
+  background: linear-gradient(145deg, #d18b4a, #a86138); /* earthy gradient */
+  color: white;
+  font-size: 1rem;
+  font-family: 'Playfair Display', serif;
+  font-weight: 600;
+  cursor: pointer;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.4);
+  transition: transform 0.2s ease, box-shadow 0.3s ease, background 0.3s ease;
+}
+
+.upload-btn::file-selector-button:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5);
+  background: linear-gradient(145deg, #a86138, #d18b4a);
+}

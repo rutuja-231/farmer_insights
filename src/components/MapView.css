@@ -1,0 +1,126 @@
+/* MapView Container */
+.map-view-container {
+  display: flex;
+  gap: 2rem;
+  padding: 1rem;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+
+/* Left side: Map */
+.map-view-container .map-left {
+  flex: 1;
+}
+
+/* Right side: Heading + State Info */
+.map-view-container .map-right {
+  flex: 0.4;
+  padding-top: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+
+.map-view-container .map-right h2 {
+  font-family: 'Playfair Display', serif;
+  color: #a86138;
+  font-size: 2.5rem;
+  line-height: 1.2;
+  text-shadow: 2px 2px 6px rgba(0,0,0,0.2);
+  margin: 0 0 1.5rem 0;
+}
+
+/* State Info Box */
+.state-info-box {
+  background-color: #fdf7f0;
+  border-radius: 12px;
+  box-shadow: 0 6px 15px rgba(0,0,0,0.1);
+  padding: 1.5rem 2rem;
+  width: 100%;
+  max-width: 340px;
+  font-family: 'Lora', serif;
+  color: #3b2f2f;
+  transition: all 0.3s ease;
+  box-sizing: border-box;
+}
+
+
+.state-info-box h3 {
+  margin-top: 0;
+  font-family: 'Playfair Display', serif;
+  color: #a86138;
+}
+
+.state-info-box p {
+  margin: 0.5rem 0 0 0;
+}
+
+/* Make map responsive */
+.map-view-container svg {
+  width: 100% !important;
+  height: auto !important;
+}
+
+/* Geography hover effect */
+.rsm-geography:hover {
+  fill: #a86138 !important;
+  cursor: pointer;
+  transition: fill 0.3s ease;
+}
+
+/* Tooltip styling */
+.tooltip {
+  font-family: 'Lora', serif;
+  background-color: rgba(168, 97, 56, 0.9);
+  color: #fff;
+  padding: 0.4rem 0.8rem;
+  border-radius: 6px;
+  font-size: 0.9rem;
+}
+
+.upload-section {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;  
+  margin-bottom: 1rem;  
+  box-sizing: border-box;
+  margin: 0;
+}
+
+
+.upload-section label {
+  font-family: 'Playfair Display', serif;
+  font-weight: 600;
+  color: #a86138;
+  font-size: 1rem;
+}
+
+.upload-section input[type="file"] {
+  width: 100%;
+  max-width: 100%;
+  box-sizing: border-box;
+}
+
+.upload-section input[type="file"]:hover {
+  border-color: #a86138;
+  box-shadow: 0 4px 10px rgba(168, 97, 56, 0.3);
+}
+
+.upload-section button {
+  background-color: #a86138;
+  color: white;
+  font-family: 'Playfair Display', serif;
+  font-weight: 600;
+  padding: 0.6rem 1.2rem;
+  border-radius: 10px;
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.upload-section button:hover {
+  background-color: #f4b183;
+  color: #3b2f2f;
+}

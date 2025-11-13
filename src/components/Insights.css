@@ -1,0 +1,92 @@
+.insights-container {
+  padding: 2rem;
+  font-family: 'Lora', serif;
+  color: #3b2f2f;
+}
+
+.insights-container h2 {
+  font-family: 'Playfair Display', serif;
+  font-size: 2.5rem;
+  color: #a86138;
+  margin-bottom: 1.5rem;
+  text-shadow: 2px 2px 8px rgba(0,0,0,0.2);
+}
+
+.filters {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 2rem;
+  flex-wrap: wrap;
+}
+
+.filters select {
+  padding: 0.5rem 1rem;
+  border-radius: 10px;
+  border: 1px solid #ddd;
+  font-family: 'Playfair Display', serif;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.filters select:hover {
+  border-color: #a86138;
+  box-shadow: 0 4px 10px rgba(168, 97, 56, 0.3);
+}
+
+/* Metrics Cards */
+.metrics {
+  display: flex;
+  gap: 1.5rem;
+  margin-bottom: 2rem;
+  flex-wrap: wrap;
+}
+
+.metric-card {
+  flex: 1;
+  background: #fdf7f0;
+  padding: 1rem 1.5rem;
+  border-radius: 12px;
+  box-shadow: 0 6px 15px rgba(0,0,0,0.1);
+  text-align: center;
+  transition: transform 0.2s ease, box-shadow 0.3s ease;
+}
+
+.metric-card h3 {
+  font-family: 'Playfair Display', serif;
+  margin-bottom: 0.5rem;
+  color: #a86138;
+}
+
+.metric-card p {
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+.metric-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.15);
+}
+
+/* Charts */
+.charts {
+  display: flex;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+.bar-chart-container,
+.pie-chart-container {
+  flex: 1;
+  background: #fff6f0;
+  padding: 1rem 1.5rem;
+  border-radius: 12px;
+  box-shadow: 0 6px 15px rgba(0,0,0,0.1);
+}
+.bar-chart-container h3,
+.pie-chart-container h3 {
+  font-family: 'Playfair Display', serif;
+  color: #a86138;
+  margin-bottom: 1rem;
+  text-align: center;
+}
